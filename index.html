@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - TheQuestionPaper</title>
+  <!-- Meta Descriptions and Keywords for SEO -->
+  <meta name="description"
+    content="Search and download previous year question papers for various universities, courses, and subjects. Prepare for your exams with access to university papers, course materials, and question banks.">
+  <meta name="keywords"
+    content="previous year question papers, download question papers, university exam papers, exam papers, university question bank, course question papers, exam preparation, university papers, semester question papers, subject question papers, board papers, Indian university papers, exam papers download">
+
+  <meta name="google-site-verification" content="rCPyj8SZ3hmY2Zf2UOO9OHY_do59uu4hbz-iAp4Jzrs" />
+
+  <!-- Author & Other Metadata -->
+  <meta name="author" content="TheQuestionPaper">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#3871c1">
+  <meta name="msapplication-TileColor" content="#3871c1">
+  <!-- Standard favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- PNG icons -->
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Android Icon -->
+  <link rel="icon" href="android-chrome-192x192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="android-chrome-512x512.png" type="image/png" sizes="512x512">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Browserconfig.xml for IE -->
+  <meta name="msapplication-config" content="/browserconfig.xml">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="index.js" defer></script>
+  <script type="module" src="search.js" defer></script>
+  <script type="module" src="feedback.js" defer></script>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "TheQuestionPaper",
+    "url": "https://thequestionpapers.in",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://thequestionpapers.in/search?query={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Download Previous Year Question Papers - TheQuestionPaper" />
+  <meta property="og:description"
+    content="Search and download past question papers for universities and courses. Get ready for exams!" />
+  <meta property="og:url" content="https://thequestionpaper.in" />
+  <meta property="og:image" content="https://thequestionpaper.in/logo.png" />
+
+</head>
+
+<body>
+
+  <!-- Logo Container -->
+  <div class="logo-container">
+    <a href="#home" class="logo">
+      <img src="Mainlogo.svg" alt="YourLogo" class="logo-img">
+      <span class="logo-text">The Question Paper</span>
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <main class="animated-dots"> <!-- Home Container with Shaded Background -->
+
+    <div class="home-container">
+      <!-- Home Section -->
+      <section id="home">
+        <h2></h2>
+        <!-- Button Container -->
+        <div class="button-container">
+          <button class="home-button">
+            <i class="fas fa-calendar-alt"></i> Upcoming Govt Exam
+          </button>
+          <button class="home-button">
+            <i class="fas fa-book"></i>Reference Books
+          </button>
+          <button class="home-button">
+            <i class="fas fa-robot"></i> AI Mock Test
+          </button>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- Search Container -->
+    <div class="search-container">
+      <!-- Search Section -->
+      <section id="search">
+        <h1>Search Question Paper</h1>
+        <form class="search-form" id="search-form">
+          <div class="form-group">
+            <label for="university">University & Board</label>
+            <select id="university" name="university" required>
+              <option value="">Select University</option>
+              <!-- Options will be populated dynamically -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="course-semester">Course & Semester:</label>
+            <select id="course-semester" name="course-semester" required>
+              <option value="">Select Course and Semester</option>
+              <!-- Options will be populated dynamically -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select Subject</option>
+              <!-- Options will be populated dynamically -->
+            </select>
+          </div>
+
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <!-- Search Results Section -->
+      <section id="search-results">
+        <h2 id="search-title">Search Results</h2>
+        <div id="results"></div> <!-- This div will be populated with results -->
+      </section>
+    </div>
+
+
+    <!-- Container -->
+    <div class="container">
+      <<!-- Explore Previous Year Paper Section -->
+        <section id="explore-previous-year-paper">
+          <h1>Popular Govt. Exams Question Paper</h1>
+          <p>Work Under Progress! Available SOON</p>
+
+          <!-- Explore Previous Year Paper Categories -->
+          <div class="explore-previous-year-paper-categories">
+            <a href="#" class="btn"><i class="fas fa-clipboard-check"></i> SSC Exams</a>
+            <a href="#" class="btn"><i class="fas fa-university"></i> Banking Exams</a>
+            <a href="#" class="btn"><i class="fas fa-graduation-cap"></i> Teaching Exams</a>
+            <a href="#" class="btn"><i class="fas fa-people-arrows"></i> Civil Services Exam</a>
+            <a href="#" class="btn"><i class="fas fa-cogs"></i> Engineering Recruitment Exams</a>
+            <a href="#" class="btn"><i class="fas fa-shield-alt"></i> Defence Exams</a>
+            <a href="#" class="btn"><i class="fas fa-city"></i> State Govt. Exams</a>
+            <a href="#" class="btn"><i class="fas fa-user-shield"></i> Police Exams</a>
+            <a href="#" class="btn"><i class="fas fa-hand-holding-usd"></i> Insurance Exams</a>
+            <a href="#" class="btn"><i class="fas fa-user-md"></i> Nursing Exams</a>
+            <a href="#" class="btn"><i class="fas fa-users"></i> Other Govt. Exams</a>
+            <a href="#" class="btn"><i class="fas fa-building"></i> Campus Placement</a>
+            <a href="#" class="btn"><i class="fas fa-graduation-cap"></i> MBA Entrance Exam</a>
+            <a href="#" class="btn"><i class="fas fa-book-reader"></i> CUET and UG Entrance</a>
+            <a href="#" class="btn"><i class="fas fa-money-check-alt"></i> Accounting and Commerce</a>
+            <a href="#" class="btn"><i class="fas fa-balance-scale"></i> Judiciary Exams</a>
+            <a href="#" class="btn"><i class="fas fa-suitcase-rolling"></i> Regulatory Body Exams</a>
+          </div>
+        </section>
+
+    </div>
+
+    <!-- Explore Section -->
+    <section id="explore">
+      <h1>Explore</h1>
+      <p>Discover a variety of educational resources and topics to expand your knowledge.</p>
+
+      <!-- Explore Categories -->
+      <div class="explore-categories">
+        <div class="category-card">
+          <i class="fas fa-university"></i>
+          <h3>University Resources</h3>
+          <p>Access resources related to different universities, including their study materials and question papers.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="category-card">
+          <i class="fas fa-book-open"></i>
+          <h3>Subject Material</h3>
+          <p>Find study materials and past question papers for various subjects.</p>
+          <a href="#">Explore Subjects</a>
+        </div>
+
+        <div class="category-card">
+          <i class="fas fa-calendar-alt"></i>
+          <h3>Exam Preparation</h3>
+          <p>Get tips and resources to prepare effectively for your exams.</p>
+          <a href="#">Get Tips</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+      <div id="feedback-section">
+        <h1 id="feedback-header">Give Feedback and Rating</h1>
+        <form id="feedback-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="feedback-text" placeholder="Your Feedback" required></textarea>
+          <div class="rating">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="feedback-response"></p>
+        <div id="feedback-display"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar">
+      <div class="navbar-container">
+        <ul class="nav-links">
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#search"><i class="fas fa-search"></i> Search</a></li>
+          <li><a href="#explore"><i class="fas fa-compass"></i> Explore</a></li>
+          <li id="profileLink">
+            <a href="signin.html">
+              <i id="profileIcon" class="fas fa-user"></i>
+              <span id="profileName">Login</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="footer-container">
+      <h2>Quick Links</h2>
+      <div class="footer-links">
+        <ul>
+          <li><a href="javascript:void(0);" onclick="toggleSection(event, 'aboutUs')"><i class="fas fa-info-circle"></i>
+              About Us</a></li>
+          <li><a href="javascript:void(0);" onclick="toggleSection(event, 'contactUs')"><i class="fas fa-envelope"></i>
+              Contact Us</a></li>
+          <li><a href="javascript:void(0);" onclick="toggleSection(event, 'privacyPolicy')"><i
+                class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+          <li><a href="javascript:void(0);" onclick="toggleSection(event, 'disclaimer')"><i
+                class="fas fa-exclamation-triangle"></i> Disclaimer</a></li>
+          <li><a href="javascript:void(0);" onclick="toggleSection(event, 'termsOfService')"><i
+                class="fas fa-file-contract"></i> Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <h2>Follow Us</h2>
+        <div class="social-icons-container"> <!-- New container for icons -->
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 The Question Paper. All rights reserved.</p>
+    </div>
+
+    <!-- Documentation Sections -->
+    <div id="aboutUs" class="doc-section" style="display:none;">
+      <h3>About Us</h3>
+    </div>
+    <div id="contactUs" class="doc-section" style="display:none;">
+      <h3>Contact Us</h3>
+    </div>
+    <div id="privacyPolicy" class="doc-section" style="display:none;">
+      <h3>Privacy Policy</h3>
+    </div>
+    <div id="disclaimer" class="doc-section" style="display:none;">
+      <h3>Disclaimer</h3>
+    </div>
+    <div id="termsOfService" class="doc-section" style="display:none;">
+      <h3>Terms of Service</h3>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <!-- Logo Container -->
+    <div class="logo-container">
+        <a href="index.html" class="logo">
+            <img src="Mainlogo.svg" alt="YourLogo" class="logo-img">
+            <span class="logo-text">The Question Paper</span>
+        </a>
+    </div>
+    <div class="container">
+        <h1>Admin Panel</h1>
+
+        <!-- Add University Section -->
+        <section id="addDataSection">
+            <h2>Add New Data</h2>
+
+            <!-- Add University Form -->
+            <form id="addUniversityForm">
+                <fieldset>
+                    <legend>Add University</legend>
+                    <label for="newUniversity">University Name:</label>
+                    <input type="text" id="newUniversity" name="newUniversity" required>
+                    <button type="submit">Add University</button>
+                </fieldset>
+            </form>
+
+            <!-- Add Course Form -->
+            <form id="addCourseForm">
+                <fieldset>
+                    <legend>Add Course</legend>
+                    <label for="courseUniversity">Select University:</label>
+                    <select id="courseUniversity" required>
+                        <option value="">Select University</option>
+                    </select>
+                    <label for="newCourse">Course Name:</label>
+                    <input type="text" id="newCourse" name="newCourse" required>
+                    <label for="semester">Semester:</label>
+                    <input type="text" id="semester" name="semester" required>
+                    <button type="submit">Add Course</button>
+                </fieldset>
+            </form>
+
+            <!-- Add Subject Form -->
+            <form id="addSubjectForm">
+                <fieldset>
+                    <legend>Add Subject</legend>
+                    <label for="subjectUniversity">Select University:</label>
+                    <select id="subjectUniversity" required>
+                        <option value="">Select University</option>
+                    </select>
+                    <label for="subjectCourse">Select Course:</label>
+                    <select id="subjectCourse" required>
+                        <option value="">Select Course</option>
+                    </select>
+                    <label for="newSubject">Subject Name:</label>
+                    <input type="text" id="newSubject" name="newSubject" required>
+                    <button type="submit">Add Subject</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Upload Question Papers Section -->
+        <section id="uploadQuestionPapersSection">
+            <h2>Upload Question Papers</h2>
+            <form id="uploadQuestionPapersForm">
+                <fieldset>
+                    <legend>Upload Question Papers</legend>
+                    <label for="uploadUniversity">Select University:</label>
+                    <select id="uploadUniversity" required>
+                        <option value="">Select University</option>
+                    </select>
+
+                    <label for="uploadCourse">Select Course:</label>
+                    <select id="uploadCourse" required>
+                        <option value="">Select Course</option>
+                    </select>
+
+                    <label for="uploadSubject">Select Subject:</label>
+                    <select id="uploadSubject" required>
+                        <option value="">Select Subject</option>
+                    </select>
+
+                    <label for="uploadFiles">Upload Question Papers (PDFs):</label>
+                    <input type="file" id="uploadFiles" multiple accept="application/pdf" required>
+
+                    <button type="submit">Upload Question Papers</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Delete Data Section -->
+        <section id="deleteDataSection">
+            <h2>Delete Data</h2>
+
+            <!-- Delete University Form -->
+            <form id="deleteUniversityForm">
+                <fieldset>
+                    <legend>Delete University</legend>
+                    <label for="deleteUniversity">Select University:</label>
+                    <select id="deleteUniversity" required>
+                        <option value="">Select University</option>
+                    </select>
+                    <button id="deleteData" type="submit">Delete University</button>
+                </fieldset>
+            </form>
+
+            <!-- Delete Course Form -->
+            <form id="deleteCourseForm">
+                <fieldset>
+                    <legend>Delete Course</legend>
+                    <label for="deleteCourseUniversity">Select University:</label>
+                    <select id="deleteCourseUniversity" required>
+                        <option value="">Select University</option>
+                    </select>
+                    <label for="deleteCourse">Select Course:</label>
+                    <select id="deleteCourse" required>
+                        <option value="">Select Course</option>
+                    </select>
+                    <button id="deleteData" type="submit">Delete Course</button>
+                </fieldset>
+            </form>
+
+            <!-- Delete Subject Form -->
+            <form id="deleteSubjectForm">
+                <fieldset>
+                    <legend>Delete Subject</legend>
+                    <label for="deleteSubjectUniversity">Select University:</label>
+                    <select id="deleteSubjectUniversity" required>
+                        <option value="">Select University</option>
+                    </select>
+                    <label for="deleteSubjectCourse">Select Course:</label>
+                    <select id="deleteSubjectCourse" required>
+                        <option value="">Select Course</option>
+                    </select>
+                    <label for="deleteSubject">Select Subject:</label>
+                    <select id="deleteSubject" required>
+                        <option value="">Select Subject</option>
+                    </select>
+                    <button id="deleteData" type="submit">Delete Subject</button>
+                </fieldset>
+            </form>
+        </section>
+
+
+    </div>
+
+    <script src="admin.js" type="module"></script>
+</body>
+
+</html>

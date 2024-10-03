@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <script type="module" src="profile.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="logo-container">
+            <a href="#" class="logo">
+                <img src="Mainlogo.svg" alt="Logo" />
+                <span class="logo-text">The Question Papers</span>
+            </a>
+        </header>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+            </ul>
+        </nav>
+
+        <main class="profile-container">
+            <div class="profile-header">
+                <img id="profilePicture" class="profile-pic" src="path/to/default/profile/picture.png"
+                    alt="Profile Picture">
+                <h1 id="profileName">John Doe</h1>
+            </div>
+            <div class="profile-info">
+                <p><strong>Email:</strong> <span id="profileEmail">john.doe@example.com</span></p>
+                <p><strong>First Name:</strong> <span id="profileFirstName">John</span></p>
+                <p><strong>Last Name:</strong> <span id="profileLastName">Doe</span></p>
+            </div>
+
+            <div class="downloads-section">
+                <h2>User Downloads</h2>
+                <ul id="downloadsList"></ul>
+            </div>
+
+            <div class="profile-actions">
+                <input type="file" id="profilePicInput" accept="image/*" hidden>
+                <button id="uploadButton">Upload Profile Picture</button>
+                <button id="editProfileButton">Edit Profile</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
